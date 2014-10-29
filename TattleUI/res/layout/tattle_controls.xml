@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/app_title_text_size"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/tattle_marking_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </FrameLayout>
+
+    <com.npcompete.tattle.views.TattleControl
+        android:id="@+id/tattle_main_root_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/tattle_layout"
+            style="@style/screen_capture_rootlayout_style"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_gray"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/tattle_components"
+                style="@style/screen_capture_components_style"
+                android:layout_width="@dimen/screen_capture_components_width"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/option_email"
+                    style="@style/screen_capture_email_radio_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/mail_margin_bottom"
+                    android:layout_marginLeft="@dimen/mail_margin_left"
+                    android:layout_marginTop="@dimen/mail_margin_top"
+                    android:button="@drawable/email_custom_radio_button" />
+            </RadioGroup>
+
+            <RadioButton
+                android:id="@+id/option_record"
+                style="@style/screen_capture_record_audio_style"
+                android:layout_width="@dimen/screen_capture_email_radio_width"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/record_margin_bottom"
+                android:layout_marginLeft="@dimen/record_margin_left"
+                android:layout_marginTop="@dimen/record_margin_top"
+                android:button="@drawable/record" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/audio_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/audio_duration_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:text="@string/audio_duration"
+                android:textColor="@color/black" />
+
+            <ProgressBar
+                android:id="@+id/audio_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/screen_capture_progress_bar_widht"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </com.npcompete.tattle.views.TattleControl>
+
+</FrameLayout>

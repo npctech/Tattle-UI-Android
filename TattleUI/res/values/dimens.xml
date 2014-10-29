@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tattle_view_height">40dp</dimen>
+    <dimen name="tattle_view_width">40dp</dimen>
+    <dimen name="app_title_text_size">20sp</dimen>
+    <dimen name="screen_capture_components_width">0dp</dimen>
+    <dimen name="screen_capture_email_radio_width">0dp</dimen>
+    <dimen name="screen_capture_progress_bar_widht">120dp</dimen>
+    <dimen name="tattle_view_layout_margin_right">5dp</dimen>
+    <dimen name="record_margin_left">10dp</dimen>
+    <dimen name="record_margin_bottom">5dp</dimen>
+    <dimen name="record_margin_top">5dp</dimen>
+    <dimen name="mail_margin_top">5dp</dimen>
+    <dimen name="mail_margin_bottom">5dp</dimen>
+    <dimen name="mail_margin_left">15dp</dimen>
+
+</resources>
