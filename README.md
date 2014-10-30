@@ -1,73 +1,82 @@
-Tattle-UI-Android
-=================
 
+## Why do you need Tattle-UI
 
-Tattle-UI-Android
-Why do you need Tattle-UI
+As a developer, we struggle to understand and reproduce few UI 
+bugs reported by the tester. In tester's point of view, tester 
+writes paragraphs to explain a simple UI misalignment when they test.
 
-As a developer, we struggle to understand and reproduce few UI bugs reported by the tester. In tester's point of view, tester writes paragraphs to explain a simple UI misalignment when they test.
+Tattle-UI solves this problem by providing a simple mechanism to get UI feedback 
+from testers.
 
-Tattle-UI solves this problem by providing a simple mechanism to get UI feedback from testers.
+## What do you see on your app
 
-What do you see on your app
-
-After integration, Tattle-UI library adds a floating button on every screen. Tester can click on this button whenever he sees some issue with the UI. Tattle-UI library takes the snapshot of the current screen and allow the tester to mark problematic section using scribbles. Tester may wish to add a audio note along with this. Tattle-UI provides tester to send them in Email. We use anypic app to demo this control.
+After integration, Tattle-UI library adds a floating button on every screen. 
+Tester can click on this button whenever he sees some issue with the UI. 
+Tattle-UI library takes the snapshot of the current screen and allow the tester 
+to mark problematic section using scribbles. Tester may wish to add a audio note along with this. 
+Tattle-UI provides tester to send them in Email. We use [MultipleImagePick] (https://github.com/luminousman/MultipleImagePick) to demo this control.
 
    
 
-Integration steps
-Java
+#Integration steps
 
-From github
+## [Java](https://github.com/npctech/Tattle-UI-Android/tree/master/)
 
-Download the code from github and follow the below steps to integrate Tattle-UI into your project
-Add TattleUI library to your project 
-  
-Manifestfile
-Include the below in Android Manifest as like below.
- <application> android:name="com.npcompete.tattle.utils.BaseApp" </application>
+###From github 
+
+* Download the code from github and follow the below steps to integrate Tattle-UI into your project.
+* Add TattleUI library to your project.
+* Include the below lines in Android Manifest file.
+```
+<application> 
+   android:name="com.npcompete.tattle.utils.BaseApp" 
+</application>
+```
 
 Note:
 
-If we need spot it window on top of dialog/popup we have to call the below code befor calling dialog/popup.show() function
+If we need spot it window on top of dialog/popup we have to call the below code befor calling dialog/popup.show() function.
+```
+TattleManager tattleManager = TattleManager.getInstance();	
+tattleManager.assignVariables(arg0, windowObj);//windowObj means popup/dialog
+tattleManager.inflatingTattleViewOnCurrentView();
+```
 
-           	TattleManager tattleManager = TattleManager
-				.getInstance();
-		tattleManager.assignVariables(arg0, windowObj);//windowObj means popup/dialog
-		tattleManager.inflatingTattleViewOnCurrentView();
+## Requirement
 
-  
-Requirement
+* Minimum android SDK Version : 14
+* Maximum android SDK Version : 18
+* All Android devices.
 
-Minimum android SDK Version : 14
-Maximum android SDK Version : 18
-All Android devices.
+## Limitation
 
-Limitation
+- Only supported for **portrait** orientation.
+- Audio recording supports only **2 minutes**.
 
-Only supported for portrait orientation.
-Audio recording supports only 2 minutes.
+# Optional Configuration
 
-Optional Configuration
-Java
+## Java
 
+* Get Instance of Tattle_Configuration (Singleton) initially.
+``` 
 Tattle_Configuration tattleConfig = Tattle_Configuration.getConfigurationInstance();
-Change scribble color (default black)
+```
+* **Change scribble color (default black)**
+```
 tattleConfig.setScribbleColor(int yourColor);
-Change scribble stroke width (default 12)
+```
+* **Change scribble stroke width (default 12)**
+```
 tattleConfig.setScribbleStrokeWidth(int yourPaintStrokeWidth)
-We could also insert our own image too instead spot icon.
-
-Change background color of floating control
-
-Set recipients email
-
+```
+* **Set recipients email**
+```
 tattleConfig.setMailRecipient(String mailRecipient);
-
-Set mail subject
+```
+* **Set mail subject**
+```
 tattleConfig.setMailSubject(String mailSubject)
-
-
-
-
-This code is distributed under the terms and conditions of the MIT license.
+```
+## License  
+  
+This code is distributed under the terms and conditions of the [MIT license](LICENSE).
