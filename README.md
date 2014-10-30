@@ -36,12 +36,11 @@ Tattle-UI provides tester to send them in Email. We use [MultipleImagePick] (htt
 Note:
 
 If we need spot it window on top of dialog/popup we have to call the below code befor calling dialog/popup.show() function.
-
-           
-             ```TattleManager tattleManager = TattleManager.getInstance();	
-           	tattleManager.assignVariables(arg0, windowObj);//windowObj means popup/dialog
-                tattleManager.inflatingTattleViewOnCurrentView();
-                ```
+```
+TattleManager tattleManager = TattleManager.getInstance();	
+tattleManager.assignVariables(arg0, windowObj);//windowObj means popup/dialog
+tattleManager.inflatingTattleViewOnCurrentView();
+```
 
 ## Requirement
 
