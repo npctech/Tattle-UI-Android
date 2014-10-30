@@ -16,6 +16,7 @@ Tattle-UI library takes the snapshot of the current screen and allow the tester
 to mark problematic section using scribbles. Tester may wish to add a audio note along with this. 
 Tattle-UI provides tester to send them in Email. We use [MultipleImagePick] (https://github.com/luminousman/MultipleImagePick) to demo this control.
 
+https://github.com/npctech/Tattle-UI-Android/blob/master/ScreenShots/PlayAudio.png
    
 
 #Integration steps
