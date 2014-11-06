@@ -16,10 +16,11 @@ Tattle-UI library takes the snapshot of the current screen and allow the tester
 to mark problematic section using scribbles. Tester may wish to add a audio note along with this. 
 Tattle-UI provides tester to send them in Email. We use [MultipleImagePick] (https://github.com/luminousman/MultipleImagePick) to demo this control.
 
-[![](https://github.com/npctech/Tattle-UI-Android/blob/master/ScreenShots/TattleIcon.png)](https://raw.githubusercontent.com/npctech/Tattle-UI-Android/blob/master/Screenshots/TattleIcon.png)
-[![](https://github.com/npctech/Tattle-UI-Android/blob/master/ScreenShots/Record.png)](https://raw.githubusercontent.com/npctech/Tattle-UI-Android/blob/master/Screenshots/Record.png)
-[![](https://github.com/npctech/Tattle-UI-Android/blob/master/ScreenShots/PlayAudio.png)](https://raw.githubusercontent.com/npctech/Tattle-UI-Android/blob/master/Screenshots/PlayAudio.png)
-[![](https://github.com/npctech/Tattle-UI-Android/blob/master/ScreenShots/ShareViaMail.png)](https://raw.githubusercontent.com/npctech/Tattle-UI-Android/blob/master/Screenshots/ShareViaMail.png)
+[![](https://github.com/npctech/Tattle-UI-Android/blob/master/ScreenShots/tattle_icon.png)](https://raw.githubusercontent.com/npctech/Tattle-UI-Android/master/ScreenShots/tattle_icon.png)
+[![](https://github.com/npctech/Tattle-UI-Android/blob/master/ScreenShots/scribble.png)](https://raw.githubusercontent.com/npctech/Tattle-UI-Android/master/ScreenShots/scribble.png)
+[![](https://github.com/npctech/Tattle-UI-Android/blob/master/ScreenShots/record.png)](https://raw.githubusercontent.com/npctech/Tattle-UI-Android/master/ScreenShots/record.png)
+[![](https://github.com/npctech/Tattle-UI-Android/blob/master/ScreenShots/play_audio.png)](https://raw.githubusercontent.com/npctech/Tattle-UI-Android/master/ScreenShots/play_audio.png)
+[![](https://github.com/npctech/Tattle-UI-Android/blob/master/ScreenShots/send_mail.png)](https://raw.githubusercontent.com/npctech/Tattle-UI-Android/master/ScreenShots/send_mail.png)
 
 #Integration steps
 
