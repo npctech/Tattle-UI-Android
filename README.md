@@ -10,6 +10,8 @@ writes paragraphs to explain a simple UI misalignment when they test.
 Tattle-UI solves this problem by providing a simple mechanism to get UI feedback 
 from testers.
 
+For iOS version, refer https://github.com/npctech/Tattle-UI-ios
+
 ## What do you see on your app
 
 After integration, Tattle-UI library adds a floating button on every screen. 
@@ -46,17 +48,15 @@ If we need spot it window on top of dialog/popup we have to call the below code 
 TattleManager tattleManager = TattleManager.getInstance();	
 tattleManager.assignVariables(arg0, windowObj);//windowObj means popup/dialog
 tattleManager.inflatingTattleViewOnCurrentView();
+dialog.show();
 ```
 
 ## Requirement
 
 * Minimum android SDK Version : 14
-* Maximum android SDK Version : 18
-* All Android devices.
 
 ## Limitation
 
-- Only supported for **portrait** orientation.
 - Audio recording supports only **2 minutes**.
 
 # Optional Configuration
